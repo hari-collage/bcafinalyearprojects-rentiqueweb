@@ -1,0 +1,188 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* MAIN LAYOUT */
+.signup-container {
+  display: flex;
+  height: 100vh;
+  background: #f4f4f4;
+}
+
+/* LEFT IMAGE */
+.signup-image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+/* RIGHT FORM AREA */
+.signup-form-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* FORM CARD */
+.signup-form {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  padding: 35px 40px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* LOGO */
+.logo {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* TITLE */
+.signup-title {
+  text-align: center;
+  font-size: 22px;
+  color: #f5b301;
+  margin-bottom: 25px;
+}
+
+/* INPUTS */
+.signup-form input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.signup-form input:focus {
+  border-color: #f5b301;
+}
+
+/* ERROR TEXT */
+.error {
+  font-size: 12px;
+  color: #d32f2f;
+  margin-bottom: 8px;
+}
+
+/* USER TYPE */
+.user-type {
+  margin: 15px 0;
+}
+
+.user-type p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* RADIO ROW */
+.radio-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+/* HIDE DEFAULT RADIO */
+.radio-row input {
+  display: none;
+}
+
+/* CUSTOM RADIO */
+.custom-radio {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-radio::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  background: #f5b301;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.2s ease;
+}
+
+/* CHECKED */
+.radio-row input:checked + .custom-radio {
+  border-color: #f5b301;
+}
+
+.radio-row input:checked + .custom-radio::after {
+  transform: scale(1);
+}
+
+/* RADIO TEXT */
+.radio-text {
+  font-size: 14px;
+}
+
+/* BUTTON */
+.signup-form button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+  background: #f5b301;
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup-form button:hover {
+  background: #e0a700;
+}
+
+/* SWITCH */
+.switch {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+.switch span {
+  color: #f5b301;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .signup-container {
+    flex-direction: column;
+  }
+
+  .signup-image {
+    height: 35vh;
+  }
+}
