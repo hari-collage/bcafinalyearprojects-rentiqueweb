@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build output
+frontend/build/
+
+# Uploads (local)
+backend/uploads/
+
+# Debug/output files
+backend/dns_output.txt
+backend/output.txt
+
+# Package locks (optional, remove these lines if you want to track them)
+# package-lock.json
